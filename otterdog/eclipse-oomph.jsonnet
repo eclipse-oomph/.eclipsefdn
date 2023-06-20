@@ -15,13 +15,12 @@ orgs.newOrg('eclipse-oomph') {
     web_commit_signoff_required: false,
   },
   webhooks+: [
-    orgs.newWebhook() {
+    orgs.newOrgWebhook('https://ci.eclipse.org/oomph/github-webhook/') {
       content_type: "json",
       events+: [
         "pull_request",
         "push"
       ],
-      url: "https://ci.eclipse.org/oomph/github-webhook/",
     },
   ],
   _repositories+:: [
