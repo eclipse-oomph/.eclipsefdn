@@ -7,7 +7,9 @@ orgs.newOrg('eclipse-oomph') {
     default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides tools and frameworks for working more effectively with the Eclipse IDE.",
+    discussion_source_repository: "eclipse-oomph/oomph",
     email: "oomph-dev@eclipse.org",
+    has_discussions: true,
     name: "Eclipse Oomph",
     packages_containers_internal: false,
     packages_containers_public: false,
@@ -31,6 +33,7 @@ orgs.newOrg('eclipse-oomph') {
     orgs.newRepo('oomph') {
       allow_update_branch: false,
       default_branch: "master",
+      has_discussions: true,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('oomph.incubator') {
