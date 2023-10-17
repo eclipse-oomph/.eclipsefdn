@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-oomph
 site_description: Otterdog configuration @ eclipse-oomph
-strict: true
+strict: false
 
 site_url: https://eclipse-oomph.github.io/.eclipsefdn/
 
