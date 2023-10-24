@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-oomph') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
     blog: "https://eclipse.dev/oomph",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides tools and frameworks for working more effectively with the Eclipse IDE.",
     discussion_source_repository: "eclipse-oomph/oomph",
@@ -34,6 +33,9 @@ orgs.newOrg('eclipse-oomph') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+      },
     },
     orgs.newRepo('oomph') {
       allow_merge_commit: true,
@@ -42,6 +44,9 @@ orgs.newOrg('eclipse-oomph') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+      },
     },
     orgs.newRepo('oomph.incubator') {
       allow_merge_commit: true,
@@ -49,6 +54,9 @@ orgs.newOrg('eclipse-oomph') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+      },
     },
   ],
 }
