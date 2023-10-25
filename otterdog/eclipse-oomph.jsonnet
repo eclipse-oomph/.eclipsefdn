@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-oomph') {
   settings+: {
-    billing_email: "webmaster@eclipse.org",
     blog: "https://eclipse.dev/oomph",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides tools and frameworks for working more effectively with the Eclipse IDE.",
