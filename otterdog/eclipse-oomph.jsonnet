@@ -9,8 +9,6 @@ orgs.newOrg('eclipse-oomph') {
     email: "oomph-dev@eclipse.org",
     has_discussions: true,
     name: "Eclipse Oomph",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
