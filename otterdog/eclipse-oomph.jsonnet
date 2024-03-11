@@ -30,9 +30,6 @@ orgs.newOrg('eclipse-oomph') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
     orgs.newRepo('oomph') {
       allow_merge_commit: true,
@@ -41,9 +38,6 @@ orgs.newOrg('eclipse-oomph') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
     orgs.newRepo('oomph.incubator') {
       allow_merge_commit: true,
@@ -51,9 +45,6 @@ orgs.newOrg('eclipse-oomph') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
   ],
 }
